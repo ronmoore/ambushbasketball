@@ -1,378 +1,760 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SoCal Ambush Basketball | Girls' Basketball Team</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">	
-	<link href="css/responsive.css" rel="stylesheet">
+/*@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);*/
 
-    <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700" rel="stylesheet">
-</head><!--/head-->
 
-<body>
-	<header id="header" role="banner">		
-		<div class="main-nav">
-			<div class="container">
-				<div class="header-top">
-					<div class="pull-right social-icons">
-						<a href="https://twitter.com/socalambush"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/socalambush/"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-youtube"></i></a>
-					</div>
-				</div>     
-		        <div class="row">	        		
-		            <div class="navbar-header">
-		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		                    <span class="sr-only">Toggle navigation</span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                </button>
-		                <a class="navbar-brand" href="index.html">
-		                	<img class="img-responsive" src="images/socal-ambush-logo-175.png" alt="logo">
-		                </a>                    
-		            </div>
-		            <div class="collapse navbar-collapse">
-		                <ul class="nav navbar-nav navbar-right">                 
-		                    <li class="scroll active"><a href="#home">Home</a></li>
-		                    <li class="scroll"><a href="#explore">About Us</a></li>                         
-		                    <li class="scroll"><a href="#event">Calendar</a></li>
-		                    <li class="scroll"><a href="#about">Store</a></li>                     
-		                    <li class="no-scroll"><a href="#twitter">Videos</a></li>
-		                    <li><a class="no-scroll" href="#" target="_blank">SPONSOR US!</a></li>
-		                    <li class="scroll"><a href="#contact">Contact</a></li>       
-		                    <li class="scroll"><a href="#contact">Parents</a></li>   		           
-		                </ul>
-		            </div>
-		        </div>
-	        </div>
-        </div>                    
-    </header>
-    <!--/#header--> 
+/*************************
+*******Typography******
+**************************/
 
-    <section id="home">	
-		<div id="main-slider" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
-				<li data-target="#main-slider" data-slide-to="1"></li>
-				<li data-target="#main-slider" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img class="img-responsive" src="images/slider/basketball5.jpg" alt="slider">						
-					<div class="carousel-caption">
-						<h2>Lorem ipsum dolor</h2>
-						<h4>sit amet onsectetur adipiscing elit</h4>
-						<a href="#contact">IN NON SODALES<i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-				<div class="item">
-					<img class="img-responsive" src="images/slider/ucla5.jpg" alt="slider">	
-					<div class="carousel-caption">
-						<h2>Sed nibh risus</h2>
-						<h4>iaculis in enim et fermentum</h4>
-						<a href="#contact">EGESTAS ERAT<i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>
-				<div class="item">
-					<img class="img-responsive" src="images/slider/wnba2.jpg" alt="slider">	
-					<div class="carousel-caption">
-						<h2>Vivamus tincidunt odio</h2>
-						<h4>diam dignissim, eget vulputate</h4>
-						<a href="#contact" >GEROS MATTIS<i class="fa fa-angle-right"></i></a>
-					</div>
-				</div>				
-			</div>
-		</div>    	
-    </section>
-	<!--/#home-->
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 17px;
+  color: #fff
+}
 
-	<section id="explore">
-		<div class="container">
-			<div class="row">
-				<div class="watch">
-					<img class="img-responsive" src="images/watch.png" alt="">
-				</div>				
-				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>our next game in</h2>
-				</div>				
-				<div class="col-sm-7 col-md-6">					
-					<ul id="countdown">
-						<li>					
-							<span class="days time-font">00</span>
-							<p>days </p>
-						</li>
-						<li>
-							<span class="hours time-font">00</span>
-							<p class="">hours </p>
-						</li>
-						<li>
-							<span class="minutes time-font">00</span>
-							<p class="">minutes</p>
-						</li>
-						<li>
-							<span class="seconds time-font">00</span>
-							<p class="">seconds</p>
-						</li>				
-					</ul>
-				</div>
-			</div>
-			<div class="cart">
-				<a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
-			</div>
-		</div>
-	</section><!--/#explore-->
 
-	<section id="event">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-9">
-					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">Our Coaches and Players</h2>
-						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
-											<h5>Vocal</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-											<h4>Mike Shinoda</h4>
-											<h5>vocals, rhythm guitar</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-											<h4>Rob Bourdon</h4>
-											<h5>drums</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
-											<h5>Vocal</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-											<h4>Mike Shinoda</h4>
-											<h5>vocals, rhythm guitar</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-											<h4>Rob Bourdon</h4>
-											<h5>drums</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="guitar">
-					<img class="img-responsive" src="TKTKTK" alt="guitar">
-				</div>
-			</div>			
-		</div>
-	</section><!--/#event-->
+.btn {
+  border-radius: 0;
+  font-family: 'Yanone Kaffeesatz','sans-serif';
+  font-size: 20px;
+  padding: 9px 23px;
+}
 
-	<section id="about">
-		<div class="guitar2">				
-			<img class="img-responsive" src="TKTKTK" alt="guitar">
-		</div>
-		<div class="about-content">					
-					<h2>About SoCal Ambush</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non sodales neque. Etiam suscipit facilisis massa vitae cursus. Phasellus bibendum mauris at neque tincidunt vehicula. Curabitur vitae dui sit amet felis condimentum pulvinar. Phasellus gravida eget massa at consequat. Phasellus pulvinar sodales diam nec finibus. Proin eget bibendum elit, consequat lacinia diam. Nunc non nibh interdum, varius felis faucibus, eleifend turpis. Sed egestas tortor ac accumsan dignissim. </p>
-					<a href="#" class="btn btn-primary">Learn more <i class="fa fa-angle-right"></i></a>
-				
-		</div>
-	</section><!--/#about-->
-	
-	<section id="twitter">
-		<div id="twitter-feed" class="carousel slide" data-interval="false">
-			<div class="twit">
-				<img class="img-responsive" src="images/twit.png" alt="twit">
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<div class="text-center carousel-inner center-block">
-						<div class="item active">
-							<img src="images/twitter/twitter1.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter2.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter3.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-					</div>
-					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
-				</div>
-			</div>
-		</div>		
-	</section><!--/#twitter-feed-->
-	
-	<section id="sponsor">
-		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-10">
-						<h2>Sponsors</h2>			
-						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-						<div class="carousel-inner">
-							<div class="item active">
-								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
-								</ul>
-							</div>
-							<div class="item">
-								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>
-			<div class="light">
-				<img class="img-responsive" src="images/light.png" alt="">
-			</div>
-		</div>
-	</section><!--/#sponsor-->
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
 
-	<section id="contact">
-		<div id="map">
-			<div id="gmap-wrap">
-	 			<div id="gmap"> 				
-	 			</div>	 			
-	    	</div>
-		</div><!--/#map-->
-		<div class="contact-section">
-			<div class="ear-piece">
-				<img class="img-responsive" src="TKTKTK" alt="">
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 col-sm-offset-4">
-						<div class="contact-text">
-							<h3>Contact</h3>
-							<address>
-								E-mail: TKTKTK@ambushbasketball.org<br>
-								Phone: (562) 243-7270<br>
-							</address>
-						</div>
-							<div class="contact-address">
-							<h3>Social</h3>
-							<address>
-								Instagram: @socalambush<br>
-								Twitter: @socalambush<br>
-								Facebook: facebook.com/TKTKTK<br>
-							</address>
-						</div>
-						<div class="contact-address">
-							<h3>Address</h3>
-							<address>
-								1375 E. Palm Dr.<br>
-								Covina, CA 91724<br>
-								United States
-							</address>
-						</div>
-					</div>
-					<div class="col-sm-5">
-						<div id="contact-section">
-							<h3>Send a message</h3>
-					    	<div class="status alert alert-success" style="display: none"></div>
-					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-					            <div class="form-group">
-					                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-					            </div>
-					            <div class="form-group">
-					                <input type="email" name="email" class="form-control" required="required" placeholder="Email ID">
-					            </div>
-					            <div class="form-group">
-					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
-					            </div>                        
-					            <div class="form-group">
-					                <button type="submit" class="btn btn-primary pull-right">Send</button>
-					            </div>
-					        </form>	       
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</section>
-    <!--/#contact-->
+a:focus, 
+a:hover {
+  text-decoration: none;
+  outline: none
+}
 
-    <footer id="footer">
-        <div class="container">
-            <div class="text-center">
-                <p> Copyright  &copy;2017<a target="_blank" href="http://ambushbasketball.org/"> SoCal Ambush Basketball </a>. All Rights Reserved. <br> Designed by <a target="_blank" href="http://5amlabs.com/">5AM Labs</a></p>                
-            </div>
-        </div>
-    </footer>
-    <!--/#footer-->
-  
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  	<script type="text/javascript" src="js/gmaps.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/coundown-timer.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
-</body>
-</html>
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px
+}
+
+.navbar-toggle {
+  margin-top: 12px
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle, 
+.navbar-toggle:focus {
+  border:1px solid #fff;
+  outline: none;
+}
+
+
+/*************************
+*******Header CSS******
+**************************/
+
+.header-top {
+  display: block;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.main-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.main-nav 
+.container {
+  width: 100%
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #fff;
+  padding-left:20px;  
+}
+
+.social-icons .fa-facebook:hover {
+  color: #3B5997
+}
+
+.social-icons .fa-twitter:hover {
+  color:#29C5F6
+}
+
+.social-icons .fa-google-plus:hover {
+  color:#D13D2F
+}
+
+.social-icons .fa-youtube:hover{
+  color: #ec5538
+}
+
+.navbar-brand {
+  background-color: #FFDF00;
+  height: 90px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 297px;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: -35px;
+}
+
+.navbar-right {
+  background-color: #FFDF00;
+  padding:0 95px 0 0;
+  opacity: .9
+}
+
+.navbar-right li a {
+  padding: 35px 21px;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+}
+
+.navbar-right li a:hover, 
+.navbar-right li a:focus,  
+.navbar-right .active a {
+  background-color: #fff;
+  color: #000
+}
+
+
+.fixed-menu {
+  background-color: #1B7B98;
+  position: fixed;
+  top: 0;
+}
+
+.fixed-menu .navbar-right {
+  padding: 0;
+}
+
+
+.fixed-menu .navbar-right li a {
+  font-size: 18px;
+  padding: 20px 25px;
+  text-shadow:inherit;
+}
+
+.fixed-menu .navbar-brand {
+  height: 60px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  width: 125px;
+}
+
+.fixed-menu .navbar-brand img {
+  height:60px;
+  top: 0;
+}
+
+.fixed-menu .header-top {
+  display: none;
+}
+
+
+
+/*************************
+*******Home CSS******
+**************************/
+
+#home {
+  position: relative;
+  overflow: hidden;
+}
+
+#main-slider img {
+  width: 100%
+}
+
+#main-slider 
+.carousel-caption {
+  background: none repeat scroll 0 0 #000000;
+  bottom: 14%;
+  float: left;
+  left: 0;
+  opacity: 0.8;
+  padding:10px 60px 35px;
+  right: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+
+
+#main-slider 
+.carousel-caption h2 {  
+  font-size: 38px;
+ 
+}
+
+#main-slider 
+.carousel-caption h4 {
+  font-size: 24px;
+}
+
+#main-slider 
+.carousel-caption a {
+  font-size: 22px;
+  color: #2da1c5
+}
+
+#main-slider 
+.carousel-caption a:hover {
+  color: #2588a6
+}
+
+#main-slider 
+.carousel-caption a:hover i {
+  margin-left: 35px
+}
+
+#main-slider 
+.carousel-caption a i {
+  margin-left: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-slider 
+.carousel-indicators li {
+  background-color:#1B7B98;
+  border: 1px solid #1B7B98;
+}
+
+#main-slider 
+.carousel-indicators li.active {
+  background-color:#fff;
+  border: 1px solid #fff;
+}
+
+/*************************
+*******Explore CSS******
+**************************/
+
+#explore {
+  background-color: #C34C39;
+  background-image: url("../images/event-bg.jpg");
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat:no-repeat;
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 100px;
+}
+
+.watch {
+  position: absolute;
+  left: 0;
+  top: 7%;
+}
+
+#explore h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#countdown {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 0
+}
+
+#countdown li {
+  list-style: none;
+  display:inline-block;
+  margin-right: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: relative;
+}
+
+#countdown li:last-child {
+  margin-right: 0
+}
+
+#countdown li span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  height: 82px;
+  line-height: 79px;
+  width: 75px;
+  border-radius: 10px;
+  border-right: 1px solid #9e3e2e;
+  border-bottom: 1px solid #9e3e2e;
+}
+
+#countdown li .days {
+  background-color: #45b29d;
+  border-top: 1px solid #6ac1b1;
+  border-left: 1px solid #6ac1b1;
+}
+
+#countdown li .hours {
+  background-color: #efc94c; 
+  border-top: 1px solid #f2d470;
+  border-left: 1px solid #f2d470;
+}
+
+#countdown li .minutes {
+  background-color: #e27a3f;
+  border-top: 1px solid #e89565;
+  border-left: 1px solid #e89565;
+}
+
+#countdown li .seconds {
+  background-color: #df5a49;
+  border-top: 1px solid #e57b6d;
+  border-left: 1px solid #e57b6d;
+}
+
+#countdown li:before {
+  background-color: #FFFFFF;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 36px;
+  width: 1px;
+}
+
+#countdown li:after {
+  background-color: #FFFFFF;
+  content: "";
+  height: 11px;
+  right:0;
+  position: absolute;
+  top: 36px;
+  width: 1px;
+}
+
+.cart {
+  background-color: #b34534;  
+  position: absolute;
+  right:-200px;
+  top: 37%;
+  width:252px;
+   -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.cart:hover {
+  right:0;
+}
+
+
+.cart a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.cart a i {
+  font-size: 30px;  
+  padding: 20px 12px;
+  background-color: #A64030; 
+  margin-right: 3px;
+}
+
+ 
+
+ /*************************
+*******Event CSS******
+**************************/
+#event {
+  background-color: #33888F;
+  background-image: url("../images/performar-bg.jpg");
+  background-position: 50% 0;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.guitar {
+  position: absolute;
+  right:0;
+  top: 0
+}
+
+
+#event h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+.single-event {
+  margin-bottom: 70px;
+}
+
+.single-event h4 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+
+.single-event h5 {
+  font-size: 18px;
+  font-weight: 100;
+  display: block;
+}
+
+#event-carousel {
+  position: relative;
+}
+
+.even-control-left, 
+.even-control-right {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  top: 0;
+}
+
+.even-control-left {
+  right: 3%
+} 
+
+.even-control-right {
+  right: 0;
+}
+
+
+/*************************
+*******About CSS**********
+**************************/
+
+#about {
+  background-color: #75B46E;  
+  position: relative;  
+  width: 100%;
+  display: flex;
+}
+
+.guitar2 {
+  top: 0;
+  width: 50%;
+}
+
+.guitar2 img {
+  padding-top: 3%;
+}
+
+.about-content {
+  width: 50%;
+   background-image: url("../images/about-bg.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 70px 110px;
+}
+
+
+#about h2 {
+  margin-bottom: 23px;
+}
+
+.about-content p {
+  font-size: 17px;
+  font-family: 'Dosis',sans-serif;
+}
+
+#about .btn-primary {
+  background-color: #137c61;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  margin-top: 28px;
+}
+
+#about .btn-primary:hover {
+  background-color: #126d55
+}
+
+
+
+/*************************
+******Twitter CSS****
+**************************/
+
+#twitter {
+  background-color: #ecedef;
+  background-image: url("../images/twitter-bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat:no-repeat;
+  position: relative;
+  padding: 95px 0 90px;
+  overflow: hidden;
+}
+
+.twit {
+  position: absolute;
+  left: 0;
+  top:-42%;
+}
+
+#twitter-feed .item {
+  text-align: center;
+}
+
+#twitter-feed .item img {
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: #c5c8ce;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+#twitter-feed .item a, 
+#twitter-feed .item p { 
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Yanone Kaffeesatz','sans-serif';
+}
+
+#twitter-feed .item p {
+  color: #3D3D3D;
+}
+
+#twitter-feed .item a {
+  color:#00c3ff;
+}
+
+.twitter-control-left, 
+.twitter-control-right {
+  position: absolute;
+  color: #00c3ff;
+  top: 59%;
+  font-size: 24px
+}
+
+.twitter-control-left {
+  left: 0;
+}
+
+.twitter-control-right {
+  right:0;
+} 
+
+
+
+/*************************
+******Sponsor CSS****
+**************************/
+
+#sponsor {
+  background-color: #1881a2;
+  background-image: url("../images/sponsor-bg.jpg");
+  background-position:50% 0;
+  background-size: cover;
+  background-repeat:no-repeat;
+  position: relative;
+}
+
+.light {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#sponsor .col-sm-10 {
+  z-index: 10;
+}
+
+#sponsor h2 {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+#sponsor .item ul {
+  font-size: 0;
+  padding: 0;
+}
+
+
+#sponsor .item ul li {
+  display: inline-block;
+  list-style: none;
+  width: 33.33%;
+  margin-bottom: 75px;
+}
+
+#sponsor .item ul li:last-child {
+  margin-right: 0
+}
+
+.sponsor-control-left, 
+.sponsor-control-right {
+  color: #FFFFFF;
+  font-size: 24px;
+  position: absolute;
+  top: 20%;
+}
+
+.sponsor-control-left {
+  right: 12%
+}
+
+.sponsor-control-right {
+  right: 10%
+}
+
+
+/*************************
+******Map CSS****
+**************************/
+#map {
+  position: relative;
+}
+
+#gmap {
+  height:450px;  
+}
+
+
+/*************************
+******Contact CSS****
+**************************/
+
+.contact-section {
+  background-color: #f7ab24;
+  background-image: url("../images/contact-bg.jpg");
+  background-position:60% 0;
+  background-size:contain;
+  background-repeat:no-repeat;  
+  position: relative;
+}
+
+.ear-piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#contact .container {
+  padding-top:47px;
+}
+
+#contact h3 {
+  text-transform:inherit;
+  color: #373737; 
+}
+
+#contact-section h3 {  
+  margin-bottom: 25px
+}
+
+#contact address {
+  font-size: 18px;  
+  color: #373737; 
+}
+
+.contact-text {
+  margin-bottom: 35px;
+  display: block;
+}
+
+
+#contact-section .form-control {
+  border-color: #ae750d;
+  box-shadow:none;
+  outline: 0 none;
+  border-radius: 0;
+  color: #797979;
+  font-size: 18px;
+}
+
+#contact-section .form-control:focus {
+  border-color: #ae750d;
+}
+
+#contact-section input {  
+  height: 44px;
+}
+
+#contact-section textarea {
+  height: 90px;
+  resize:none;
+}
+
+#contact-section .btn-primary {
+  background-color: #373737;
+  color: #f7ab24;
+  border: none;
+  font-size: 24px;
+  padding: 6px 42px;
+  margin-bottom: 110px;
+  margin-top: 10px
+}
+
+#contact-section .btn-primary:hover {
+  background-color: #212020;
+  color: #fff
+}
+
+
+
+/*************************
+******Footer CSS****
+**************************/
+
+#footer {
+  background-color: #212121;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 35px 0;
+}
+
+#footer a {
+  color:#f7ab24
+}
+
+#footer a:hover {
+  color:#1B7B98
+}
+
+
